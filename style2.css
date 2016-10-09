@@ -1,0 +1,443 @@
+/*
+Theme Name: martinabischof2
+Theme URI: http://martinabischof.com
+Author: Mathias Menzl
+Author URI: http://mathiasmenzl.ch
+Description: bla
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: tags
+Text Domain: martinabischof2
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html {
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*disable grey box/highlight on mousedown on mobile safari*/ 
+}
+
+body {
+  font-family: Lato, Futura, Arial, Verdana;
+/*  background: white url('#') repeat 0 0;
+  margin:15px 0 0 0;*/
+  font-size:32px;
+}
+
+img{
+  height: auto; /* responsive images */
+  max-width: 100%; 
+}
+
+/*Header*/
+
+h1, h2 {
+  font-family: Lato, Futura, Arial, Verdana;
+  font-weight: heavy;
+}
+
+h2.entry-title span {
+  color:white;
+  background-color:black;
+}
+
+caption, h3 {
+  font-family: Lato, Futura, Arial, Verdana;
+  font-weight: heavy;
+  color:white;
+}
+
+header a:hover {
+  text-decoration: line-through;
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  top: 0px;
+  z-index: 9990;
+  background: #white; /*#edc340*/
+  color: #000;
+  padding: 15px;
+  height: 62px;
+}
+
+header h2{
+  float: left;
+  font-size: 2.0em;
+  margin: 0 0 0 20px;
+  text-align:left;
+}
+
+nav ul{
+  font-family:lato;
+  font-weight:100;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn {
+  float: left;
+  font-size: 2.3em;
+  cursor: pointer;
+  color: #000; 
+  margin: 15px 0 0 0;
+}
+
+i.icon-reorder.menu-btn {
+  margin-right:20px;
+}
+
+nav.pushy.pushy-left {
+  background:white;
+}
+
+ul#menu-main-menu.menu {
+  background:white;
+  font-size: 22px;
+  width:140%;
+}
+
+/*Contact*/
+
+p {
+  font-size:1.6rem;
+}
+
+p.contact_text.about_text, span {
+  color:white;
+  background-color:black;
+}
+
+/*hover on touch devices
+*/
+element:hover,element:active {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-touch-callout: none /*only to disable context menu on long press*/
+}
+
+/*Map*/
+
+#map {
+  height: 500px;
+  border-top: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.container { 
+  position: relative; 
+/*  width: 960px; 
+  margin: 0 auto; 
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;  */
+}
+ 
+#filters {
+  margin:1%;
+  padding:0;
+  list-style:none;
+}
+
+  #filters li {
+    float:left;
+  }
+  
+  #filters li span {
+    display: block;
+    padding:5px 20px;   
+/*    text-decoration:none;
+*/    color:#666;
+    cursor: pointer;
+  }
+  
+  #filters li span.active {
+    text-decoration: line-through;
+    color:#000;
+  }
+
+#hover-cap .thumbnail {
+    position:relative;
+    overflow:hidden;   
+}
+.caption {
+    display: none;
+    position: absolute;
+    background: black; /*rgba(0,0,0,0.3);*/
+    width: 100%;
+    max-height:100%;
+    padding:5px;
+    font-size:24px;
+    text-align:center;
+    text-decoration:none;
+    bottom:0px;
+    color:#fff !important;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.caption a:hover{
+  text-decoration:line-through;
+}
+
+
+
+/*Bootstrap-Changes*/
+
+.col-sm-6.col-md-4 {
+  padding:0;
+}
+
+.btn-default {
+  border-color: transparent; 
+  font-size: 32px;
+}
+
+#filters button.btn.btn-default {
+  color: #666;
+}
+
+/*#filters button.btn.btn-default:active {
+  color: #000;
+  text-decoration:line-through;
+
+}*/
+
+#filters button.btn.btn-default:hover, #filters button.btn.btn-default:focus, #filters button.btn.btn-default.focus, 
+#filters button.btn.btn-default:active, #filters button.btn.btn-default.active,
+#filters button.btn.btn-default:active:hover {
+  border:0px;
+  background-color:transparent;
+  text-decoration:line-through;
+  outline:none;
+  color:#000;
+}
+
+/*Foundation Changes*/
+
+.caption a {
+  color:white;
+}
+
+/*Images*/
+
+
+.portfolio-navigation {
+  font-size:20px;
+  color:grey;
+  float:left;
+}
+
+.portfolio-navigation li {
+  list-style:none;
+}
+
+ul.list {
+  text-align:center;
+}
+
+ul.list li {
+  width: auto;
+  float: left;
+}
+
+div .portfolio-navigation a {
+    color:grey;
+    font-size:18px;
+    list-style:none;
+    text-decoration:none;
+  }
+
+div .portfolio-navigation a:hover {
+  color:black;
+  text-decoration: line-through;
+}
+
+footer {
+  font-size:18px;
+}
+
+footer .footerleft {
+  width:50%;
+}
+
+footer .footerright {
+  float:right;
+}
+
+footer {
+  margin: 50px 0 50px 0;
+}
+
+footer a {
+  text-decoration:none;
+}
+
+footer a:hover {
+  color:black;
+  text-decoration:none;
+}
+
+
+
+
+/*navigation bootstrap
+*/
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+
+div .about {
+  margin-top:50px;
+}
+
+div .contact {
+  margin-top:50px;
+}
+
+
+.scrollup {
+    background: url(./img/icon_top.png) no-repeat scroll 0 0 transparent;
+    bottom: 5px;
+    display: none;
+    height: 40px;
+    position: fixed;
+    z-index: 10000;
+    right: 10px;
+    text-indent: -9999px;
+    width: 40px;
+}
+
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 100%; 
+  }
+
+  div .portfolio-navigation a {
+      color:grey;
+      font-size:14px;
+      list-style:none;
+      text-decoration:none;
+    }
+
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .container { 
+    max-width: 100%; 
+  }
+  
+  .menu-btn {
+    font-size: 1.3em;
+  }
+
+  .icon-reorder:before {
+    font-size:40px;
+  }
+
+  #ads {
+    display:none;
+  }
+
+  header h2 {
+    font-size:28px;
+    text-align:left;
+  }
+
+  h2 {
+    font-size:18px
+  }
+
+  button.btn.btn-default {
+    font-size:12px;
+  }
+
+  div.hamburger {
+    padding:0px;
+  }
+
+  footer {
+    font-size:10px;
+  }
+
+  div .portfolio-navigation a {
+      color:grey;
+      font-size:10px;
+      list-style:none;
+      text-decoration:none;
+    }
+
+  .portfolio-navigation {
+    font-size:10px;
+    color:grey;
+    float:left;
+  }
+  
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  
+  #ads {
+    display:none;
+  }
+
+  button.btn.btn-default {
+    font-size:16px;
+  }
+
+  .menu-btn {
+    font-size: 1.3em;
+  }
+
+  .hamburger {
+    padding:0px;
+  }
+
+  div .portfolio-navigation a {
+      color:grey;
+      font-size:10px;
+      list-style:none;
+      text-decoration:none;
+    }
+  
+  .portfolio-navigation {
+    font-size:10px;
+    color:grey;
+    float:left;
+  }
+
+  
+}
