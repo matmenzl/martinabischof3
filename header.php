@@ -18,7 +18,7 @@
             <!-- Menu Button -->
 <!--             <i class="icon-reorder menu-btn"></i>--> 
 
-                <div class="hamburger hamburger--arrow menu-btn">
+                <div class="hamburger hamburger--squeeze menu-btn">
                 <div class="hamburger-box">
                 <div class="hamburger-inner"></div>
                 </div>

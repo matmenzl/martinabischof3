@@ -26,7 +26,7 @@
 
 .pushy ul a {
     display: block;
-    color: #b3b3b1;
+    color: black;
     padding: 15px 30px;
 /*    border-bottom: 1px solid rgba(0, 0, 0, .1);
 border-top: 1px solid rgba(255, 255, 255, .1);*/    
@@ -79,7 +79,7 @@ border-top: 1px solid rgba(255, 255, 255, .1);*/
 
 /* Site Overlay */
 
-.site-overlay{
+/*.site-overlay{
     display: none;
 }
 
@@ -91,4 +91,4 @@ border-top: 1px solid rgba(255, 255, 255, .1);*/
     bottom: 0;
     left: 400px;
     z-index: 9999;
-}
+}*/

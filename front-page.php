@@ -10,14 +10,14 @@
         <?php
         $terms = get_terms("portfolio_tags");
         $count = count($terms);
-        echo '<div id="filters" class="btn-group">';
-        echo '<button type="button" class="btn btn-default" autofocus="true" data-filter="*">'. __('Alle', 'bootstrapwp') .'</button>';
+        echo '<div id="filters">';
+        echo '<button type="button" autofocus="true" data-filter="*">'. __('Alle', 'bootstrapwp') .'</button>';
         if ( $count > 0 )
         {   
           foreach ( $terms as $term ) {
             $termname = strtolower($term->name);
             $termname = str_replace(' ', '-', $termname);
-            echo '<button type="button" class="btn btn-default" data-filter=".'.$termname.'">'.$term->name.'</button>';
+            echo '<button type="button" data-filter=".'.$termname.'">'.$term->name.'</button>';
           }
         }
         echo "</div>";

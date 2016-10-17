@@ -9,12 +9,12 @@ jQuery(document).ready(function($) {
     });
   });
 
-  $('#container').isotope({
-    masonry: {
-      columnWidth: 110,
-      gutterWidth: 10
-    }
-  });
+  // $('.portfolio-item').isotope({
+  //   masonry: {
+  //     columnWidth: 110,
+  //     gutterWidth: 15
+  //   }
+  // });
    
   // filter items on button click
   $('#filters').on( 'click', 'button', function() {
