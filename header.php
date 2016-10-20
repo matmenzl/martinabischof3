@@ -9,38 +9,32 @@
         
         <?php wp_head(); ?>
     </head>
-        <!-- Header -->
-        <header class="push">
-          <nav class="pushy pushy-left">
-              <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?> 
-          </nav>
 
-            <!-- Menu Button -->
-<!--             <i class="icon-reorder menu-btn"></i>--> 
-
-                <div class="hamburger hamburger--squeeze menu-btn">
-                <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-                </div>
-                </div>
-                </div>
-            <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-                <h2><?php bloginfo('name'); ?></h2>
-            </a>
+    <body <?php body_class(); ?>>
 
 
-            
+    <header>
+        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+         
+          <ul class="nav navmenu-nav">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+
+<!--             <li class="active"><a href="#">Home</a></li>
+ -->          </ul>
+        </nav>
+        <div class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        </div>
+
+        <a class="navmenu-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+        <div class="subtitle"><?php bloginfo('description'); ?></div>
 
 
-        </header>
+            </div>
 
-        <body <?php body_class(); ?>>
-
-
-        <!-- Site Overlay -->
-<!--         <div class="site-overlay"></div>
- -->
-        <!-- Content -->
-<!--         <div class="container">
- -->
+    </header
 

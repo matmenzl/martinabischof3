@@ -6,15 +6,11 @@ jQuery(document).ready(function($) {
     $container.isotope({
       itemSelector: '.item',
       layoutMode: 'masonry',
+      });
     });
-  });
 
-  // $('.portfolio-item').isotope({
-  //   masonry: {
-  //     columnWidth: 110,
-  //     gutterWidth: 15
-  //   }
-  // });
+
+
    
   // filter items on button click
   $('#filters').on( 'click', 'button', function() {

@@ -32,10 +32,8 @@ function remove_admin_login_header() {
 
 
 function martinabischof_theme_styles() {
-  // wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
-  // wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style2.css' );
-  wp_enqueue_style( 'pushy_css', get_template_directory_uri() . '/css/pushy.css' );
+  wp_enqueue_style( 'jasny-bootstrap', get_template_directory_uri() . '/css/jasny-bootstrap.css' );
+  wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'hamburgers_css', get_template_directory_uri() . '/css/hamburgers.css' );
 }
 
@@ -48,17 +46,18 @@ function enqueue_our_required_stylesheets(){
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 function martinabischof_theme_js() {
-  wp_enqueue_script('pushy', get_template_directory_uri() . '/js/pushy.js', array('jquery'), '', false );
-  // wp_enqueue_script('respond', get_template_directory_uri() . '/js/respond.min.js', array('jquery'), '', false );
   wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', false );
+  wp_enqueue_script('jasny-bootstrap', get_template_directory_uri() . '/js/jasny-bootstrap.js', array('jquery'), '', false );
   wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', false );
   wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', false );
   wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlqSsyuD-_Ou4UqJtLLVZQ10IGvytab8&sensor=false');
 
   wp_enqueue_script('front', get_template_directory_uri() . '/js/front.js', array('jquery'), '', false );
   wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '3.0.1', false );
+  wp_enqueue_script( 'cellsbyrows-js', get_template_directory_uri() . '/js/cellsbyrows.js', array(''), '', false );
   wp_enqueue_script( 'images-loaded-js', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array('jquery'), '4.1.1', false );
   wp_enqueue_script( 'hambugrgers-js', get_template_directory_uri() . '/js/hamburgers.js', array(''), '', false );
+
    
 
 }

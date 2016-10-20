@@ -6,7 +6,6 @@
 
     <div id="primary" class="col-md-12 col-lg-12">
       <main id="main" class="site-main portfolio" role="main">
-
         <?php
         $terms = get_terms("portfolio_tags");
         $count = count($terms);
