@@ -16,6 +16,17 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+// include single page in any template
+function cn_include_content($pid) {
+  $thepageinquestion = get_post($pid);
+  $content = $thepageinquestion->post_content;
+  $content = apply_filters('the_content', $content);
+  $content = str_replace(']]>', ']]>', $content);
+  echo $content;
+}
+
+
+
 /*
  * Enable support for Post Formats.
  * See http://codex.wordpress.org/Post_Formats

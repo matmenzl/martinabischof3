@@ -40,6 +40,24 @@ a {
   width:15%;
 }
 
+.row {
+  margin-left:20px;
+  margin-right:0px;
+}
+
+button {
+  padding:0px 15px 0 0;
+}
+
+.container {
+  padding-left: 0px;
+}
+
+button:focus {
+  outline:0;
+}
+
+
 /*Header*/
 
 
@@ -77,8 +95,8 @@ header {
   background: #white; /*#edc340*/
   color: #000;
   padding: 15px;
-  height: 62px;
-}
+/*  height: 62px;
+*/}
 
 header h2{
   float: left;
@@ -111,11 +129,6 @@ nav ul {
 }
 
 
-nav.pushy.pushy-left {
-  background:white;
-}
-
-
 /*Contact*/
 
 p {
@@ -134,6 +147,7 @@ element:hover,element:active {
 /*Map*/
 
 #map {
+  margin-top:30px;
   height: 500px;
   border-top: solid 1px #eeeeee;
   border-bottom: solid 1px #eeeeee;
@@ -150,8 +164,6 @@ element:hover,element:active {
 }
  
 #filters {
-  margin:1%;
-  padding:0;
   list-style:none;
 }
 
@@ -216,7 +228,7 @@ element:hover,element:active {
 }
 
 div.portfolio-item {
-   margin:15px 15px 15px 15px;
+   margin:20px 0px 20px 0px;
   }
 
 /*Boostrap overrides
@@ -228,6 +240,7 @@ div.portfolio-item {
 
 .navbar-toggle {
   display: inline-block;
+  padding:0px;
 }
 
 
@@ -314,7 +327,7 @@ div .contact {
     height: 40px;
     position: fixed;
     z-index: 10000;
-    right: 10px;
+    right: 5%;
     text-indent: -9999px;
     width: 40px;
 }
@@ -324,9 +337,9 @@ div .contact {
 
 /* #Tablet (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
+/*  .container {
     width: 100%; 
-  }
+  }*/
 
   div .portfolio-navigation a {
       color:grey;
@@ -340,34 +353,48 @@ div .contact {
   }
 
   .col-md-4 {
-    width:33%;
+    width:22%;
   }
 
 }
 
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
 
   .col-md-4 {
-    width:44%;
+    width:25%;
   }
 
-  .container { 
-    max-width: 100%; 
+  .col-sm-6.col-md-4 {
+    padding:0px;
   }
+
+  .subtitle {
+    font-size:10px;
+  }
+
+  a.navmenu-brand {
+    font-size:20px;
+  }
+
+  div.portfolio-item {
+     margin:20px 10px 20px 10px;
+    }
+
+/*  .container { 
+    max-width: 100%; 
+  }*/
   
-  .menu-btn {
+/*  .menu-btn {
     font-size: 1.3em;
   }
+*/
 
-  .icon-reorder:before {
-    font-size:40px;
-  }
-
+/*
   #ads {
     display:none;
-  }
+  }*/
 
   header h2 {
     font-size:28px;
@@ -428,13 +455,17 @@ div .contact {
     width:33%;
   }
 
-  .container {
+  div.portfolio-item {
+     margin:10px 0px 10px 0px;
+    }
+
+/*  .container {
     width: 100%;
-  }
+  }*/
   
-  #ads {
+/*  #ads {
     display:none;
-  }
+  }*/
 
   #filters button {
       color: #666;
@@ -455,10 +486,10 @@ div .contact {
       color:#000;
     }
 
-  .menu-btn {
+/*  .menu-btn {
     font-size: 1.3em;
   }
-
+*/
   .hamburger {
     padding:5px;
   }

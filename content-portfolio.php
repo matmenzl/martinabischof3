@@ -4,7 +4,7 @@
  */
 ?>
 
-
+<div class="container">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <div class="entry-content">
@@ -40,7 +40,7 @@
   
 
     </div> <!-- .row -->
- 
+ </div> <!-- container -->
     <?php
       wp_link_pages( array(
         'before' => '<div class="page-links">' . __( 'Pages:', 'bootstrapwp' ),

@@ -6,8 +6,18 @@ jQuery(document).ready(function($) {
     $container.isotope({
       itemSelector: '.item',
       layoutMode: 'masonry',
-      });
+      masonry: {
+        columnWidth: 70,
+        gutterWidth: 0
+      }
+      // layoutMode: 'cellsByRow',
+      // cellsByRow: {
+      //   columnWidth: 110,
+      //   rowHeight: 50
+      // }
     });
+  });
+
 
 
 

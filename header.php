@@ -14,6 +14,9 @@
 
 
     <header>
+
+        <div class="container">
+        <div class="row">
         <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
          
           <ul class="nav navmenu-nav">
@@ -34,7 +37,8 @@
         <div class="subtitle"><?php bloginfo('description'); ?></div>
 
 
-            </div>
+        </div>
+        </div>
 
     </header
 

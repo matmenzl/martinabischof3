@@ -6,6 +6,9 @@
 
     <div id="primary" class="col-md-12 col-lg-12">
       <main id="main" class="site-main portfolio" role="main">
+
+      <div class="container">
+        <div class="row">
         <?php
         $terms = get_terms("portfolio_tags");
         $count = count($terms);
@@ -28,8 +31,12 @@
 
         <?php if ( $the_query->have_posts() ) : ?>
 
-          <div class="row">
-            <div id="portfolio-items">
+        </div> <!-- row -->
+        </div> <!-- container -->
+
+        <div class="container">
+<!--           <div class="row">
+ -->            <div id="portfolio-items">
 
 
 
@@ -62,9 +69,15 @@
                         </a>
                         <div class="caption">
 
-                        <h3><?php $terms = get_the_terms($post->ID, 'portfolio_tags'); $count = count($terms); if ( $count > 0 ){ foreach ( $terms as $term ) { echo $term->name; } } ?></h3>
+                       
 
-                          <h4><a href="<?php the_permalink(); ?>" rel="tooltip"><?php the_title(); ?></a></h4>
+                          <h4><a href="<?php the_permalink(); ?>" rel="tooltip">
+
+                            <h3><?php $terms = get_the_terms($post->ID, 'portfolio_tags'); $count = count($terms); if ( $count > 0 ){ foreach ( $terms as $term ) { echo $term->name; } } ?></h3>
+
+                          <?php the_title(); ?>
+
+                          </a></h4>
                         </div>
                       </div>
                     </div>
@@ -75,8 +88,9 @@
               <!-- end of the loop -->
 
             </div> <!-- #portfolio-items -->
+          </div> <!-- container -->
 
-          </div> <!-- .row -->
+          <!-- </div> --> <!-- .row -->
 
 
           <?php wp_reset_postdata(); ?>
@@ -94,7 +108,7 @@
 
 
 <!--about-->
-<section id="about">
+<!-- <section id="about">
   <div class="container">
     <div class="about">
       <div class="row">
@@ -107,7 +121,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!--contact-->
 <section id="contact">
@@ -115,9 +129,9 @@
     <div class="contact">
       <div class="row">
         <div id="primary" class="col-md-12 col-lg-12">
-          <h1>Contact</h1>
-          <div>
-            <p class="contact_text"><span>Tine Van Tasi</span><br><span>Werkstatt für Architektur und Kunst</span><br><span>Martina Bischof</span><br><span>MSc ETH<br>Bändlistrasse 29</span><br><span>8054 Zürich</span><br><span>t +41 79 409 39 83</span><br><span>m post@martinabischof.com</span></p>
+<!--           <h1>Contact</h1>
+ -->          <div>
+            <?php cn_include_content(12); ?>
           </div>
           <div id="map"></div>
           <div>
