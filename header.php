@@ -17,7 +17,7 @@
 
         <div class="container">
         <div class="row">
-        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+        <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
          
           <ul class="nav navmenu-nav">
           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>

@@ -71,13 +71,13 @@
 
                        
 
-                          <h4><a href="<?php the_permalink(); ?>" rel="tooltip">
+                          <h5><a href="<?php the_permalink(); ?>" rel="tooltip">
 
-                            <h3><?php $terms = get_the_terms($post->ID, 'portfolio_tags'); $count = count($terms); if ( $count > 0 ){ foreach ( $terms as $term ) { echo $term->name; } } ?></h3>
+                            <h4><?php $terms = get_the_terms($post->ID, 'portfolio_tags'); $count = count($terms); if ( $count > 0 ){ foreach ( $terms as $term ) { echo $term->name; } } ?></h3>
 
                           <?php the_title(); ?>
 
-                          </a></h4>
+                          </a></h5>
                         </div>
                       </div>
                     </div>

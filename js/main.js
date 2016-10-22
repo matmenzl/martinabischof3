@@ -7,14 +7,8 @@ jQuery(document).ready(function($) {
       itemSelector: '.item',
       layoutMode: 'masonry',
       masonry: {
-        columnWidth: 70,
-        gutterWidth: 0
+        columnWidth: 8,
       }
-      // layoutMode: 'cellsByRow',
-      // cellsByRow: {
-      //   columnWidth: 110,
-      //   rowHeight: 50
-      // }
     });
   });
 

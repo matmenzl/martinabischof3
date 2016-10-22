@@ -1,5 +1,5 @@
 /*
-Theme Name: martinabischof2.1
+Theme Name: martinabischof2.2
 Theme URI: http://martinabischof.com
 Author: Mathias Menzl
 Author URI: http://mathiasmenzl.ch
@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: tags
-Text Domain: martinabischof2.1
+Text Domain: martinabischof2.2
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -36,8 +36,8 @@ a {
 }
 
 
-.col-md-4 {
-  width:15%;
+.col-md-4.col-sm-6 {
+  width:12%;
 }
 
 .row {
@@ -57,6 +57,12 @@ button:focus {
   outline:0;
 }
 
+button.hamburger {
+  padding:0px;
+  font-size:0px;
+}
+
+
 
 /*Header*/
 
@@ -65,6 +71,7 @@ button:focus {
 a.navmenu-brand {
   font-size: 32px;
   color:black;
+  padding:10px 0 10px 0;
 }
 
 .subtitle {
@@ -111,6 +118,7 @@ nav ul {
   margin: 0;
   padding: 0;
   font-size:24px;
+  list-style:none;
 }
 
 .menu-btn {
@@ -194,7 +202,7 @@ element:hover,element:active {
     background: black; /*rgba(0,0,0,0.3);*/
     max-height:100%;
     width:100%;
-    font-size:24px;
+    font-size:15px;
     text-align:center;
     text-decoration:none;
     bottom:0px;
@@ -212,7 +220,7 @@ element:hover,element:active {
   color: #666;
   font-family: Nunito, Futura, Arial, Verdana;
   background-color:transparent;
-  font-size:32px;
+  font-size:20px;
   border:none;
 }
 
@@ -235,7 +243,7 @@ div.portfolio-item {
 */
 
 .navbar-toggle {
-  float:left !important; 
+  float:right !important; 
 }
 
 .navbar-toggle {
@@ -327,7 +335,7 @@ div .contact {
     height: 40px;
     position: fixed;
     z-index: 10000;
-    right: 5%;
+    right: 30px;
     text-indent: -9999px;
     width: 40px;
 }
@@ -451,8 +459,8 @@ div .contact {
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
-  .col-md-4 {
-    width:33%;
+  .col-md-4.col-sm-6 {
+    width:11%;
   }
 
   div.portfolio-item {
