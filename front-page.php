@@ -129,9 +129,8 @@
     <div class="contact">
       <div class="row">
         <div id="primary" class="col-md-12 col-lg-12">
-<!--           <h1>Contact</h1>
- -->          <div>
-            <?php cn_include_content(12); ?>
+          <div>
+              <?php cn_include_content(12); ?>
           </div>
           <div id="map"></div>
           <div>
