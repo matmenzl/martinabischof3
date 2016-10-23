@@ -1,5 +1,5 @@
 /*
-Theme Name: martinabischof2.2
+Theme Name: martinabischof2.3
 Theme URI: http://martinabischof.com
 Author: Mathias Menzl
 Author URI: http://mathiasmenzl.ch
@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: tags
-Text Domain: martinabischof2.2
+Text Domain: martinabischof2.3
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -37,11 +37,11 @@ a {
 
 
 .col-md-4.col-sm-6 {
-  width:12%;
+  width:14%;
 }
 
 .row {
-  margin-left:20px;
+  margin-left:16px;
   margin-right:0px;
 }
 
@@ -140,7 +140,7 @@ nav ul {
 /*Contact*/
 
 p {
-  font-size:1rem;
+  font-size:2rem;
 }
 
 
@@ -293,11 +293,7 @@ div .portfolio-navigation a:hover {
 }
 
 footer {
-  font-size:18px;
-}
-
-footer .footerleft {
-  width:50%;
+  font-size:14px;
 }
 
 footer .footerright {
@@ -308,16 +304,14 @@ footer {
   margin: 50px 0 50px 0;
 }
 
-footer a {
+footer, a {
   text-decoration:none;
 }
 
-footer a:hover {
+footer, a:hover {
   color:black;
   text-decoration:none;
 }
-
-
 
 div .about {
   margin-top:50px;
@@ -341,6 +335,10 @@ div .contact {
 }
 
 
+div.copyright {
+  float:left;
+}
+
 
 
 /* #Tablet (Portrait) */
@@ -361,21 +359,35 @@ div .contact {
   }
 
   .col-md-4 {
-    width:22%;
+    width:20%;
   }
 
+  .row {
+    margin-left:14px;
+    margin-right:0px;
+  }
+
+  div.copyright {
+    float:left;
+  }
 }
 
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 480px) {
 
-  .col-md-4 {
-    width:25%;
+  .col-md-4.col-sm-6 {
+    width:20%;
   }
 
   .col-sm-6.col-md-4 {
     padding:0px;
+  }
+
+
+  .row {
+    margin-left:16px;
+    margin-right:0px;
   }
 
   .subtitle {
@@ -459,8 +471,14 @@ div .contact {
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
+
   .col-md-4.col-sm-6 {
-    width:11%;
+    width:20%;
+  }
+
+  .row {
+    margin-left:13px;
+    margin-right:0px;
   }
 
   div.portfolio-item {
