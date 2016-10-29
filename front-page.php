@@ -72,17 +72,17 @@
 
 
   <!-- Example row of columns -->
-  <div class="row">
+  <div class="contact">
     <div class="col-lg-4">
       <?php cn_include_content(12); ?>
     </div>
-    <div class="col-lg-4">
-      
-    </div>
-    <div class="col-lg-4">
-      
-    </div>
   </div>
+    <div class="col-lg-4">
+      
+    </div>
+    <div class="col-lg-4">
+      
+    </div>
 
 
 <?php get_footer(); ?>

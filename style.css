@@ -216,6 +216,10 @@ p {
   font-size:2rem;
 }
 
+.contact {
+  margin-top:100px;
+}
+
 
 /*hover on touch devices
 */
@@ -364,7 +368,7 @@ footer .footerright {
 }
 
 footer {
-  margin: 50px 0 50px 0;
+  margin: 100px 0 50px 0;
 }
 
 footer, a {

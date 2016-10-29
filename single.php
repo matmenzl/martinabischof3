@@ -8,7 +8,6 @@
 get_header(); ?>
 
 <div class="row">
-<div class="container">
 
 	<div id="primary" class="col-lg-12 col-md-12">
 		<main id="main" class="site-main" role="main">
@@ -26,14 +25,13 @@ get_header(); ?>
 				endif;
 			?>
 
-		 <?php endwhile; //end of the loop. ?>
+		 <?php endwhile; ?>
 
 
-		</main>#main
+		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	</div>
-	</div>
+	</div> 
 
 
 <?php get_footer(); ?>

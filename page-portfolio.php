@@ -6,7 +6,6 @@
 
 <?php get_header(); ?>  
 
-<!-- <div class="container"> -->
 <div class="row">
 
   <div class="small-12 columns text-center">
@@ -25,7 +24,5 @@
   </div>
 
 </div>
-<!-- </div>
- -->
 
 <?php get_footer(); ?>

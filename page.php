@@ -14,13 +14,11 @@ get_header(); ?>
 
 
   <div class="row">
-  <div class="container">
 
 
     <div id="primary" class="col-lg-12 col-md-12">
       <main id="main" class="site-main" role="main">
 
-        <div class="container">
 
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -32,13 +30,10 @@ get_header(); ?>
 
       <?php endif; ?>
 
-      </div>
 
 
-
-      </main><!-- #main -->
-    </div><!-- #primary -->
-</div>
+      </main>  <!-- #main -->
+   </div> <!-- #primary -->
   </div>
 
 

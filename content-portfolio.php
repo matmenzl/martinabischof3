@@ -4,11 +4,10 @@
  */
 ?>
 
-<!-- <div class="container">
- --><article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<!--   <div class="entry-content">
- -->    <div class="row">
+  <div class="entry-content">
+    <div class="row">
       <div class="col-md-12 col-lg-12" style="
     display: inline;">
       <div class="portfolio-navigation">
@@ -40,25 +39,19 @@
   
 
     </div> <!-- .row -->
-<!--  </div>  --><!-- container -->
     <?php
       wp_link_pages( array(
         'before' => '<div class="page-links">' . __( 'Pages:', 'bootstrapwp' ),
         'after'  => '</div>',
       ) );
     ?>
-  <!-- </div> --><!-- .entry-content -->
+  </div> <!-- .entry-content-->
 
-<!--   Related Content-->  
-<!--   <div>
-  <h2>Weitere Arbeiten</h2>
-  <?php echo do_shortcode("[post_grid id='44']"); ?>
-  </div> -->
 
- 
-  <footer class="entry-footer">
+  <div class="entry-footer">
 
     
     <?php edit_post_link( __( 'Edit', 'bootstrapwp' ), '<span class="edit-link">', '</span>' ); ?>
-  </footer><!-- .entry-footer -->
+  </div><!-- .entry-footer -->
+
 </article><!-- #post-## -->
