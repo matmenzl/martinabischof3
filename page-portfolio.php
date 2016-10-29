@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>  
 
-<div class="container">
+<!-- <div class="container"> -->
 <div class="row">
 
   <div class="small-12 columns text-center">
@@ -18,15 +18,14 @@
         <?php the_content(); ?>     
       
       <?php endwhile(); endif; ?>
-
+      
       <?php get_template_part('content', 'portfolio') ;?>
-
 
     </div>
   </div>
 
 </div>
-</div>
-
+<!-- </div>
+ -->
 
 <?php get_footer(); ?>

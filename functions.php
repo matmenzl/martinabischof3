@@ -3,6 +3,8 @@
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
 
 function register_theme_menus() {
 
@@ -43,6 +45,7 @@ function remove_admin_login_header() {
 
 
 function martinabischof_theme_styles() {
+  wp_enqueue_style( 'animate_css', get_template_directory_uri() . '/css/animate.css' );
   wp_enqueue_style( 'jasny-bootstrap', get_template_directory_uri() . '/css/jasny-bootstrap.css' );
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'hamburgers_css', get_template_directory_uri() . '/css/hamburgers.css' );

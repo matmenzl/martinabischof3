@@ -1,5 +1,5 @@
 /*
-Theme Name: martinabischof2.3
+Theme Name: martinabischof2.4
 Theme URI: http://martinabischof.com
 Author: Mathias Menzl
 Author URI: http://mathiasmenzl.ch
@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: tags
-Text Domain: martinabischof2.3
+Text Domain: martinabischof2.4
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -35,14 +35,9 @@ a {
   color:black;
 }
 
-
-.col-md-4.col-sm-6 {
-  width:14%;
-}
-
 .row {
-  margin-left:16px;
-  margin-right:0px;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 
 button {
@@ -67,6 +62,40 @@ button.hamburger {
 /*Header*/
 
 
+.navbar-default {
+  border-color:transparent;
+  background-color:rgba(255,255,255, 0.8);    /* 70% opaque red */
+}
+
+button.navbar-toggle, button.navbar-default, button.navbar-toggle:hover, button.navbar-toggle:focus, button.navbar-toggle:active {
+  border:none;
+  background-color:transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color:transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:black;
+}
+
+.navbar-collapse {
+  border-top:none;
+}
+
+.navbar-default .navbar-brand {
+  color:black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:black;
+}
+
+a.navbar-brand {
+  font-size:32px;
+  color:black;
+}
 
 a.navmenu-brand {
   font-size: 32px;
@@ -86,7 +115,7 @@ h1, h2 {
 caption, h3 {
   font-family: Nunito, Futura, Arial, Verdana;
   font-weight: heavy;
-  color:white;
+  color:black;
 }
 
 header a:hover {
@@ -99,11 +128,10 @@ header {
   width: 100%;
   top: 0px;
   z-index: 9990;
-  background: #white; /*#edc340*/
   color: #000;
   padding: 15px;
-/*  height: 62px;
-*/}
+  height: 62px;
+}
 
 header h2{
   float: left;
@@ -135,6 +163,51 @@ nav ul {
   color:black;
   padding:35px 0 0 15px;
 }
+
+
+/*Navigation */
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color:transparent;
+  text-decoration: underline;
+}
+
+/*Navbar-toggle animation*/
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+
+
 
 
 /*Contact*/
@@ -181,8 +254,8 @@ element:hover,element:active {
   
   #filters li span {
     display: block;
-    padding:5px 20px;   
-/*    text-decoration:none;
+/*    padding:5px 20px;   
+*//*    text-decoration:none;
 */    color:#666;
     cursor: pointer;
   }
@@ -192,28 +265,26 @@ element:hover,element:active {
     color:#000;
   }
 
-#hover-cap .thumbnail {
+/*#hover-cap .thumbnail {
     position:relative;
     overflow:hidden;   
-}
+}*/
+
+
 .caption {
-    display: none;
-    position: absolute;
-    background: black; /*rgba(0,0,0,0.3);*/
-    max-height:100%;
+    position:absolute;
+    top:20px;
+    left:10px;
+    background:rgba(255, 255, 255, 0.5);
     width:100%;
-    font-size:15px;
+    height:100%;
+    padding:2%;
+    display: none;
     text-align:center;
-    text-decoration:none;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    color:#fff !important;
+    color:black !important;
+    z-index:10;
 }
 
-.caption a:hover{
-  text-decoration:underline;
-}
 
 
 #filters button {
@@ -239,23 +310,15 @@ div.portfolio-item {
    margin:20px 0px 20px 0px;
   }
 
-/*Boostrap overrides
-*/
-
-.navbar-toggle {
-  float:right !important; 
-}
-
-.navbar-toggle {
-  display: inline-block;
-  padding:0px;
-}
+div.frontpage-item {
+    margin:20px 0px 20px 0px;
+  }
 
 
 /*Foundation Changes*/
 
 .caption a {
-  color:white;
+  color:black;
 }
 
 /*Images*/
@@ -313,14 +376,6 @@ footer, a:hover {
   text-decoration:none;
 }
 
-div .about {
-  margin-top:50px;
-}
-
-div .contact {
-  margin-top:50px;
-}
-
 
 .scrollup {
     background: url(./img/icon_top.png) no-repeat scroll 0 0 transparent;
@@ -339,199 +394,33 @@ div.copyright {
   float:left;
 }
 
+div.frontpage-item:hover, div.portfolio-item:hover {
+  border: 5px solid black;
+}
+
 
 
 /* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-/*  .container {
-    width: 100%; 
-  }*/
-
-  div .portfolio-navigation a {
-      color:grey;
-      font-size:14px;
-      list-style:none;
-      text-decoration:none;
-    }
-
-  .navbar-toggle {
-    display: inline-block;
-  }
-
-  .col-md-4 {
-    width:20%;
-  }
-
-  .row {
-    margin-left:14px;
-    margin-right:0px;
-  }
-
-  div.copyright {
-    float:left;
-  }
-}
+/*@media only screen and (min-width: 768px) and (max-width: 959px) {
 
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 480px) {
 
-  .col-md-4.col-sm-6 {
-    width:20%;
-  }
-
-  .col-sm-6.col-md-4 {
-    padding:0px;
-  }
-
-
   .row {
-    margin-left:16px;
-    margin-right:0px;
+    margin: 0 auto;
+    margin-left: 20px;
   }
-
-  .subtitle {
-    font-size:10px;
-  }
-
-  a.navmenu-brand {
-    font-size:20px;
-  }
-
-  div.portfolio-item {
-     margin:20px 10px 20px 10px;
-    }
-
-/*  .container { 
-    max-width: 100%; 
-  }*/
-  
-/*  .menu-btn {
-    font-size: 1.3em;
-  }
-*/
-
-/*
-  #ads {
-    display:none;
-  }*/
-
-  header h2 {
-    font-size:28px;
-    text-align:left;
-  }
-
-  h2 {
-    font-size:18px
-  }
-
-  #filters button {
-    color: #666;
-    font-family: Nunito, Futura, Arial, Verdana;
-    background-color:transparent;
-    font-size:18px;
-    padding:5px;
-    border:none;
-  }
-
-  #filters button:hover, #filters button:focus, #filters button.focus, 
-  #filters button:active, #filters button.active,
-  #filters button:active:hover {
-    border:0px;
-    background-color:transparent;
-    text-decoration:underline;
-    outline:none;
-    color:#000;
-  }
-
-  div.hamburger {
-    padding:0px;
-  }
-
-  footer {
-    font-size:10px;
-  }
-
-  div .portfolio-navigation a {
-      color:grey;
-      font-size:10px;
-      list-style:none;
-      text-decoration:none;
-    }
-
-  .portfolio-navigation {
-    font-size:10px;
-    color:grey;
-    float:left;
-  }
-  
 }
 
+ 
 
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
-
-  .col-md-4.col-sm-6 {
-    width:20%;
-  }
-
   .row {
-    margin-left:13px;
-    margin-right:0px;
+    margin: 0 auto;
+    margin-left: 20px;
   }
-
-  div.portfolio-item {
-     margin:10px 0px 10px 0px;
-    }
-
-/*  .container {
-    width: 100%;
-  }*/
-  
-/*  #ads {
-    display:none;
-  }*/
-
-  #filters button {
-      color: #666;
-      font-family: Nunito, Futura, Arial, Verdana;
-      background-color:transparent;
-      font-size:18px;
-      padding:5px;
-      border:none;
-    }
-
-    #filters button:hover, #filters button:focus, #filters button.focus, 
-    #filters button:active, #filters button.active,
-    #filters button:active:hover {
-      border:0px;
-      background-color:transparent;
-      text-decoration:underline;
-      outline:none;
-      color:#000;
-    }
-
-/*  .menu-btn {
-    font-size: 1.3em;
-  }
-*/
-  .hamburger {
-    padding:5px;
-  }
-
-  div .portfolio-navigation a {
-      color:grey;
-      font-size:10px;
-      list-style:none;
-      text-decoration:none;
-    }
-  
-  .portfolio-navigation {
-    font-size:10px;
-    color:grey;
-    float:left;
-  }
-
-  
 }
+ 

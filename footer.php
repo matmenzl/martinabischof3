@@ -1,5 +1,4 @@
     <footer>
-    <div class="container">
       <div class="row">
       <a class="scrollup" href="#" style="display:inline;">Scroll</a>
 
@@ -18,7 +17,6 @@
         </div>
         </div>
       </div><!-- .row -->
-      </div><!-- container -->
     </footer>
   </body>
 </html>

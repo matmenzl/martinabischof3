@@ -1,14 +1,14 @@
 jQuery(document).ready(function($) {
 
 
-    // initialize Isotope after all images have loaded
+  // initialize Isotope after all images have loaded
   var $container = $('#portfolio-items').imagesLoaded( function() {
     $container.isotope({
       itemSelector: '.item',
-      layoutMode: 'masonry',
-      masonry: {
-        columnWidth: 8,
-      }
+      layoutMode: 'masonry'
+      // masonry: {
+      //   columnWidth: 0,
+      // }
     });
   });
 
@@ -25,23 +25,24 @@ jQuery(document).ready(function($) {
 
   $("[rel='tooltip']").tooltip();    
    
-      $('#hover-cap .portfolio-item').hover(
+      $('#hover-cap, .frontpage-item, .porftolio-item').hover(
           function(){
               $(this).find('.caption').slideDown(250); //.fadeIn(250)
           },
           function(){
-              $(this).find('.caption').slideUp(250); //.fadeOut(205)
+              $(this).find('.caption').slideUp(250); //.fadeOut(250)
           }
-      );    
+      );   
+
+
       
   // Look for .hamburger
-    var hamburger = document.querySelector(".hamburger");
-    // On click
-    hamburger.addEventListener("click", function() {
-      // Toggle class "is-active"
-      hamburger.classList.toggle("is-active");
-      // Do something else, like open/close menu
-    });
+    // var hamburger = document.querySelector(".hamburger");
+    // hamburger.addEventListener("click", function() {
+    //   hamburger.classList.toggle("is-active");
+    // });
+
+
 
     //Scroll-Up Icon
 

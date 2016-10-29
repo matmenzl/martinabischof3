@@ -4,11 +4,11 @@
  */
 ?>
 
-<div class="container">
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!-- <div class="container">
+ --><article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <div class="entry-content">
-    <div class="row">
+<!--   <div class="entry-content">
+ -->    <div class="row">
       <div class="col-md-12 col-lg-12" style="
     display: inline;">
       <div class="portfolio-navigation">
@@ -40,14 +40,14 @@
   
 
     </div> <!-- .row -->
- </div> <!-- container -->
+<!--  </div>  --><!-- container -->
     <?php
       wp_link_pages( array(
         'before' => '<div class="page-links">' . __( 'Pages:', 'bootstrapwp' ),
         'after'  => '</div>',
       ) );
     ?>
-  </div><!-- .entry-content -->
+  <!-- </div> --><!-- .entry-content -->
 
 <!--   Related Content-->  
 <!--   <div>

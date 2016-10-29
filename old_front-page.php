@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
 
+<div class="container">
+  <div class="row">
+
+    <div id="primary" class="col-md-12 col-lg-12">
+      <main id="main" class="site-main portfolio" role="main">
+
         <?php
         $terms = get_terms("portfolio_tags");
         $count = count($terms);
@@ -48,6 +54,8 @@
                 endif;
                 ?>
 
+                <ul class="thumbnails" id="hover-cap"> <!-- add id attr to thumbnail list -->
+                  <div class="thumbnails">
                     <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
                       <div class="portfolio-item">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -58,10 +66,15 @@
                         </div>
                       </div>
                     </div>
-
+                  </div>
+                </ul>
               <?php endwhile; ?>
 
               <!-- end of the loop -->
+
+            </div> <!-- #portfolio-items -->
+
+          </div> <!-- .row -->
 
 
           <?php wp_reset_postdata(); ?>
@@ -69,6 +82,13 @@
         <?php else : ?>
           <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
+
+
+      </main><!-- #main -->
+    </div><!-- #primary -->
+
+  </div><!-- .row -->
+</div><!-- .container -->
 
 
 <!--about-->
