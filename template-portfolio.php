@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
 
-<div class="container">
   <div class="row">
 
-    <div id="primary" class="col-md-12 col-lg-12">
       <main id="main" class="site-main portfolio" role="main">
 
         <div class="row">
@@ -97,10 +95,8 @@
 
 
       </main><!-- #main -->
-    </div><!-- #primary -->
 
   </div><!-- .row -->
-</div><!-- .container -->
 
 
 

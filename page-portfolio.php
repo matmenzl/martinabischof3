@@ -8,8 +8,6 @@
 
 <div class="row">
 
-  <div class="small-12 columns text-center">
-    <div class="leader">
       
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       
@@ -20,8 +18,6 @@
       
       <?php get_template_part('content', 'portfolio') ;?>
 
-    </div>
-  </div>
 
 </div>
 
