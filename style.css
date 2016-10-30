@@ -172,6 +172,15 @@ nav ul {
   text-decoration: underline;
 }
 
+.navbar-toggle:before {
+    content:"Menu";
+    left:-50px;
+    top:4px;
+    position:absolute;
+    width:50px;
+    font-size:18px;
+}
+
 /*Navbar-toggle animation*/
 .navbar-toggle {
   border: none;
@@ -277,16 +286,20 @@ element:hover,element:active {
 
 .caption {
     position:absolute;
+    text-align:center;
     top:20px;
-    left:10px;
-    background:rgba(255, 255, 255, 0.5);
+    /* leftbackground:rgba(255, 255, 255, 0.5);
     width:100%;
     height:100%;
-    padding:2%;
+    padding:2%;*/
     display: none;
-    text-align:center;
+    /*
     color:black !important;
-    z-index:10;
+    border: 1px solid black;
+    z-index:10;*/
+    width:100%;
+    height:100%;
+
 }
 
 
@@ -400,8 +413,15 @@ div.copyright {
 
 div.frontpage-item:hover, div.portfolio-item:hover {
   border: 5px solid black;
+  text-align:center;
+  width:100%;
+  height:100%;
 }
 
+img:hover {
+  -webkit-filter: opacity(.2);
+    filter: opacity(.2);
+}
 
 
 /* #Tablet (Portrait) */
