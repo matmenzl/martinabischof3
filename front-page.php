@@ -68,21 +68,24 @@
         <?php endif; ?>
 
 
+
+</div>
+
+<div class="container">
+  <div class="col-md-12 col-lg-12 col-sm-12 text-center"
+  <p><a class="btn btn-lg btn-info button-front" href="http://www.martinabischof.com/portfolio" role="button">View all works</a></p>
+  </div>
 </div>
 
 
-  <!-- Example row of columns -->
-  <div class="contact">
-    <div class="col-lg-4">
-      <?php cn_include_content(12); ?>
-    </div>
-  </div>
-    <div class="col-lg-4">
-      
-    </div>
-    <div class="col-lg-4">
-      
-    </div>
+<!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1></h1>
+        <p class="lead"><?php cn_include_content(12); ?></p>
+        <p><a class="btn btn-lg btn-info" href="mailto:post@martinabischof.com" role="button">Get in contact</a></p>
+      </div>
+
+
 
 
 <?php get_footer(); ?>

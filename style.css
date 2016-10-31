@@ -57,7 +57,26 @@ button.hamburger {
   font-size:0px;
 }
 
+.jumbotron {
+  text-align:center;
+  background-color:#e8e8e8;
+}
 
+.btn-info {
+  background-color:black;
+  border:none;
+  border-radius:1px;
+}
+
+.btn-info:hover {
+  background-color:white;
+  color:black;
+  border-radius:1px;
+}
+
+a .btn .btn-lg .btn-info .button-front {
+  text-align:center;
+}
 
 /*Header*/
 
@@ -177,10 +196,52 @@ nav ul {
   color:black;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+/*.navbar-default .navbar-nav>li>a:hover {
   color:white;
   background-color:black;
+}*/
+
+
+/*animated underline*/
+.navbar-nav>li>a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
 }
+
+.navbar-nav>li>a:hover {
+  color:black;
+}
+
+.navbar-nav>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav>li>a:hover:before {
+  visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
 
 .navbar-toggle:before {
     content:"Menu";
@@ -397,7 +458,7 @@ footer, a:hover {
 
 .scrollup {
     background: url(./img/icon_top.png) no-repeat scroll 0 0 transparent;
-    bottom: 5px;
+    bottom: 30px;
     display: none;
     height: 40px;
     position: fixed;
