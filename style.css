@@ -62,13 +62,13 @@ button.hamburger {
   background-color:#e8e8e8;
 }
 
-.btn-info {
+.btn.btn-lg.btn-info {
   background-color:black;
   border:none;
   border-radius:1px;
 }
 
-.btn-info:hover {
+.btn.btn-lg.btn-info:hover {
   background-color:white;
   color:black;
   border-radius:1px;
