@@ -60,6 +60,7 @@ button.hamburger {
 .jumbotron {
   text-align:center;
   background-color:#e8e8e8;
+  margin-top:48px.btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info.btn;
 }
 
 .btn.btn-lg.btn-info {
@@ -68,11 +69,13 @@ button.hamburger {
   border-radius:1px;
 }
 
-.btn.btn-lg.btn-info:hover {
+.btn.btn-lg.btn-info:hover, .btn.btn-lg.btn-info:active {
   background-color:white;
   color:black;
   border-radius:1px;
 }
+
+
 
 a .btn .btn-lg .btn-info .button-front {
   text-align:center;
@@ -234,15 +237,6 @@ nav ul {
     transform: scaleX(1);
 }
 
-
-
-
-
-
-
-
-
-
 .navbar-toggle:before {
     content:"Menu";
     left:-50px;
@@ -286,9 +280,12 @@ nav ul {
 }
 
 
+/*Buttons*/
 
-
-
+.allworks {
+  margin:30px 0 30px 0;
+  width:100%;
+}
 
 /*Contact*/
 

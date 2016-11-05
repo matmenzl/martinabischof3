@@ -36,23 +36,34 @@ jQuery(document).ready(function($) {
 
 
       
-  // Look for .hamburger
-    // var hamburger = document.querySelector(".hamburger");
-    // hamburger.addEventListener("click", function() {
-    //   hamburger.classList.toggle("is-active");
-    // });
+  // Look for .hamburger --> not used 
+  // var hamburger = document.querySelector(".hamburger");
+  // hamburger.addEventListener("click", function() {
+  //   hamburger.classList.toggle("is-active");
+  // });
 
 
 
-    //Scroll-Up Icon
+  //Show hide scrollup button
+  $('.scrollup').hide()
+  $(document).scroll(function(){
+      if ($(this).scrollTop() > 700) {
+        $('.scrollup').fadeIn();
+      } else {
+        $('.scrollup').fadeOut();
+      }
+    });
+  
+  //Click event to scroll to top
+  $('.scrollup').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
 
-    $('.scrollup').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 500);
-        return false;
-      });
 
-    // turn hover to touch on mobile
-    document.addEventListener("touchstart", function(){}, true);
+
+  // Turn hover to touch on mobile
+  document.addEventListener("touchstart", function(){}, true);
 
 
 });
