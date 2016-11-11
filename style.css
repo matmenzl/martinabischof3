@@ -3,11 +3,11 @@ Theme Name: martinabischof2.4
 Theme URI: http://martinabischof.com
 Author: Mathias Menzl
 Author URI: http://mathiasmenzl.ch
-Description: bla
+Description: Website for Swiss Architect Martina Bischof.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: tags
+Tags: architecture, website, martina bischof
 Text Domain: martinabischof2.4
 
 This theme, like WordPress, is licensed under the GPL.
@@ -59,9 +59,10 @@ button.hamburger {
 }
 
 .jumbotron {
+  background:white;
   text-align:center;
-  background-color:#e8e8e8;
-  margin-top:48px.btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info.btn;
+/*  background-color:#e8e8e8;
+*/  margin-top:48px.btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info.btn;
 }
 
 .btn.btn-lg.btn-info {
