@@ -18,6 +18,10 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+//Register Sidebars/Widget-Areas
+if ( function_exists('register_sidebar') )
+register_sidebar();
+
 // include single page in any template
 function cn_include_content($pid) {
   $thepageinquestion = get_post($pid);
@@ -27,6 +31,38 @@ function cn_include_content($pid) {
   echo $content;
 }
 
+
+// show random post on homepage
+function wpb_rand_posts() { 
+
+$args = array(
+  'post_type' => 'portfolio',
+  'orderby' => 'rand',
+  'posts_per_page' => 1, 
+  );
+
+$the_query = new WP_Query( $args );
+
+if ( $the_query->have_posts() ) {
+
+$string .= '<div class="jumbotron">';
+  while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+    $string .= '<a href="'. get_the_permalink() .'">'. get_the_post_thumbnail() .'</a>';
+  }
+  $string .= '</div>';
+  /* Restore original Post Data */
+  wp_reset_postdata();
+} else {
+
+$string .= 'no posts found';
+}
+
+return $string; 
+} 
+
+add_shortcode('wpb-random-posts','wpb_rand_posts');
+add_filter('widget_text', 'do_shortcode'); 
 
 
 /*
