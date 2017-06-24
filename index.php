@@ -48,7 +48,7 @@
                 endif;
                 ?>
 
-                    <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
+                    <div class="col-md-6 col-md-offset-3 <?php echo strtolower($tax); ?>">
                       <div class="portfolio-item">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                           <?php the_post_thumbnail(); ?>

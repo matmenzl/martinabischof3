@@ -26,6 +26,8 @@ body {
   font-size:32px;
 }
 
+
+
 img{
   height: auto; /* responsive images */
   max-width: 100%; 
@@ -85,6 +87,7 @@ a .btn .btn-lg .btn-info .button-front {
 
 /*Header*/
 
+/*in order to move the logo/titel the te left*/
 
 .navbar-default {
   border-color:transparent;
@@ -190,6 +193,24 @@ nav ul {
 
 
 /*Navigation */
+
+
+#filters button {
+  padding-left:10px;
+}
+
+#filters button[data-filter=".architektur"] {
+    font-size:30px;
+    padding-left:none;
+    padding-left:0px;
+}
+
+#filters button[data-filter=".objektkunst"] {
+    font-size:30px;
+    padding-left:none;
+    padding-left:0px;
+
+}
 
 .container-fluid>.navbar-collapse {
   margin-right:15px;
@@ -488,8 +509,64 @@ img:hover, img:active{
 }
 
 
+
+/* start css styles for displaying the navigation on the left side
+*/
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+  }
+  .navbar-collapse.collapse {
+    display: inline-block !important;
+    width: auto;
+    padding-bottom: 0;
+/*    overflow: visible !important;
+*/  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+  }
+
+.navbar
+{
+  max-width:300px;
+  margin-right: 0;
+  margin-left: 0;
+} 
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+}
+
+/* end css styles for displaying the navigation on the left side
+*/
+
+
+
+
 /* #Tablet (Portrait) */
-/*@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+/*moving the wp-navigation below the filters
+*/
+
+
+
+}
 
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
@@ -503,6 +580,7 @@ img:hover, img:active{
   a.navbar-brand {
     font-size:24px;
   }
+
 }
 
  
@@ -514,5 +592,6 @@ img:hover, img:active{
     margin: 0 auto;
     margin-left: 20px;
   }
+
 }
  

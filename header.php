@@ -16,7 +16,7 @@
 
     <header>
 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-right" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-side navbar-fixed-side-left" role="navigation">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">

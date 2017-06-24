@@ -5,12 +5,16 @@
 
       <main id="main" class="site-main portfolio" role="main">
 
-        <div class="row">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+
         <?php
         $terms = get_terms("portfolio_tags");
         $count = count($terms);
         echo '<div id="filters">';
-        echo '<button type="button" autofocus="true" data-filter="*">'. __('Alle', 'bootstrapwp') .'</button>';
+        echo '<button type="button" autofocus="true" data-filter="*">'. __('Alle') .'</button>';
+
         if ( $count > 0 )
         {   
           foreach ( $terms as $term ) {
@@ -28,6 +32,7 @@
 
         <?php if ( $the_query->have_posts() ) : ?>
 
+           </div><!-- col md-offset-4 -->
         </div> <!-- row -->
 
 
@@ -57,7 +62,8 @@
 
                 <ul class="thumbnails" id="hover-cap"> <!-- add id attr to thumbnail list -->
                   <div class="thumbnails">
-                    <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
+                  <div class="col-md-6 col-md-offset-3">
+                    <div class="col-sm-6 item <?php echo strtolower($tax); ?>">
                       <div class="portfolio-item">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                           <?php the_post_thumbnail(); ?>
@@ -77,13 +83,13 @@
                         </div>
                       </div>
                     </div>
+                    </div>
                   </ul>
               <?php endwhile; ?>
 
               <!-- end of the loop -->
 
             </div> <!-- #portfolio-items -->
-
 
 
 
