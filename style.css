@@ -41,8 +41,8 @@ a {
 
 .row {
   margin: 0 auto;
-  margin-left: 20px;
-}
+/*  margin-left:120px;
+*/}
 
 button {
   padding:0px 15px 0 0;
@@ -201,7 +201,8 @@ nav ul {
   padding-left:10px;
 }
 
-#filters button[data-filter=".architektur"] {
+/*styling for isotope-filters with data-filter-attribute*/
+/*#filters button[data-filter=".architektur"] {
     font-size:30px;
     padding-left:none;
     padding-left:0px;
@@ -212,7 +213,7 @@ nav ul {
     padding-left:none;
     padding-left:0px;
 
-}
+}*/
 
 .container-fluid>.navbar-collapse {
   margin-right:15px;
@@ -354,8 +355,8 @@ element:hover,element:active {
 }
 
   #filters li {
-    float:left;
-  }
+/*    float:left;
+*/  }
   
   #filters li span {
     display: block;
@@ -520,7 +521,7 @@ div.frontpage img {
 }
 
 /*hide nav on front-page.php*/
-.page-id-2 .navigation, .navbar-header, footer{
+.page-id-2 header, footer{
   display: none;
 }
 
@@ -531,13 +532,19 @@ div.frontpage img {
   right:5px;
 }
 
+/*style chevron-icon on front-page.php*/
+.chevronicon {
+  color:white;
+  height:50px;
+}
+
 
 
 /* start css styles for displaying the navigation on the left side
 */
 
 @media (min-width: 768px) {
-  .navbar-collapse {
+ /* .navbar-collapse {
     height: auto;
     border-top: 0;
     box-shadow: none;
@@ -549,15 +556,15 @@ div.frontpage img {
     display: inline-block !important;
     width: auto;
     padding-bottom: 0;
-/*    overflow: visible !important;
-*/  }
+    overflow: visible !important;
+  }
   .navbar-collapse.in {
     overflow-x: visible;
   }
 
 .navbar
 {
-  max-width:300px;
+  max-width:200px;
   margin-right: 0;
   margin-left: 0;
 } 
@@ -569,11 +576,14 @@ div.frontpage img {
 .navbar-header
 {float:none !important;}
 
-.navbar-right .dropdown-menu {left:0;right:auto;}
+.navbar-right .dropdown-menu {
+  left:0;
+  right:auto;
+}
 .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
-}
+}*/
 
 /* end css styles for displaying the navigation on the left side
 */
@@ -584,9 +594,12 @@ div.frontpage img {
 /* #Tablet (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 959px){
 
-/*moving the wp-navigation below the filters
-*/
-
+  .row {
+    margin: 0 auto;
+  }
+/*  .row {
+    margin-left: 120px;
+  }*/
 
 
 }
@@ -597,7 +610,6 @@ div.frontpage img {
 
   .row {
     margin: 0 auto;
-    margin-left: 20px;
   }
 
   a.navbar-brand {
@@ -613,8 +625,9 @@ div.frontpage img {
   
   .row {
     margin: 0 auto;
-    margin-left: 20px;
   }
+
+  
 
 }
  

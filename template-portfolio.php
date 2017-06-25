@@ -6,7 +6,7 @@
       <main id="main" class="site-main portfolio" role="main">
 
       <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-9 col-sm-9">
 
 
         <?php
@@ -32,8 +32,7 @@
 
         <?php if ( $the_query->have_posts() ) : ?>
 
-           </div><!-- col md-offset-4 -->
-        </div> <!-- row -->
+
 
 
              <div id="portfolio-items">
@@ -62,8 +61,8 @@
 
                 <ul class="thumbnails" id="hover-cap"> <!-- add id attr to thumbnail list -->
                   <div class="thumbnails">
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class="col-sm-6 item <?php echo strtolower($tax); ?>">
+                  <!-- <div class="col-md-6 col-md-offset-3"> -->
+                    <div class="col-md-4 col-sm-4 item <?php echo strtolower($tax); ?>">
                       <div class="portfolio-item">
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                           <?php the_post_thumbnail(); ?>
@@ -82,8 +81,8 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-                    </div>
+<!--                     </div>
+ -->                    </div>
                   </ul>
               <?php endwhile; ?>
 
@@ -99,7 +98,8 @@
           <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
 
-
+           </div><!-- col md-9 -->
+        </div> <!-- row -->
       </main><!-- #main -->
 
   </div><!-- .row -->

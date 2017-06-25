@@ -15,10 +15,8 @@
 
 
     <header>
-        <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                  <?php bloginfo('name'); ?>
-              </a>
-        <nav class="navbar navbar-default navbar-fixed-side navbar-fixed-side-left" role="navigation">
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -28,6 +26,9 @@
                 <span class="icon-bar middle-bar"></span>
                 <span class="icon-bar bottom-bar"></span>
               </button>
+              <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                        <?php bloginfo('name'); ?>
+                    </a>
               
             </div>
             <div class="navigation">
@@ -45,7 +46,6 @@
                     );
                 ?>
             </div>
-        </nav>        
+        </nav>
 
     </header
-

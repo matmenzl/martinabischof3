@@ -13,7 +13,7 @@
 
       <?php endif; ?>
 
-      <button class="refresh" style="background-color:transparent;border:none;"><a href="" onclick="dummy(0);return false;" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></button>
+      <button class="refresh" style="background-color:transparent;border:none;"><a href="" onclick="dummy(0);return false;" ><span class="glyphicon glyphicon-chevron-right chevronicon" aria-hidden="true"></span></a></button>
 
 
 </div>
