@@ -7,6 +7,7 @@
  
 get_header(); ?>
 
+<div class="col-md-6 col-md-offset-3">
 <div class="container">
 <div class="row">
 
@@ -25,6 +26,7 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
  
+</div>
 </div>
 </div>
 <?php get_footer(); ?>

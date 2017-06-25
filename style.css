@@ -38,6 +38,7 @@ a {
 }
 
 
+
 .row {
   margin: 0 auto;
   margin-left: 20px;
@@ -91,7 +92,8 @@ a .btn .btn-lg .btn-info .button-front {
 
 .navbar-default {
   border-color:transparent;
-  background-color:rgba(255,255,255, 0.8);    /* 70% opaque red */
+  /*background-color:rgba(255,255,255, 0.8);*/    /* 70% opaque red */
+  background-color:transparent;
 }
 
 button.navbar-toggle, button.navbar-default, button.navbar-toggle:hover, button.navbar-toggle:focus, button.navbar-toggle:active {
@@ -503,9 +505,30 @@ div.frontpage-item:hover, div.portfolio-item:hover {
   height:100%;
 }
 
-img:hover, img:active{
+img:hover, img:active {
   -webkit-filter: opacity(.2);
   filter: opacity(.2);
+}
+
+/*make frontpage-image responsive
+*/
+
+div.frontpage img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+/*hide nav on front-page.php*/
+.page-id-2 .navigation, .navbar-header, footer{
+  display: none;
+}
+
+/*button refresh positioning*/
+.refresh {
+  position: absolute;
+  top:10em;
+  right:5px;
 }
 
 

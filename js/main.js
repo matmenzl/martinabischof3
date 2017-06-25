@@ -13,8 +13,6 @@ jQuery(document).ready(function($) {
   });
 
 
-
-
    
   // filter items on button click
   $('#filters').on( 'click', 'button', function() {
@@ -59,7 +57,6 @@ jQuery(document).ready(function($) {
     $('html, body').animate({scrollTop : 0},1000);
     return false;
   });
-
 
 
   // Turn hover to touch on mobile

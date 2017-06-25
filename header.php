@@ -15,7 +15,9 @@
 
 
     <header>
-
+        <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                  <?php bloginfo('name'); ?>
+              </a>
         <nav class="navbar navbar-default navbar-fixed-side navbar-fixed-side-left" role="navigation">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,11 +28,9 @@
                 <span class="icon-bar middle-bar"></span>
                 <span class="icon-bar bottom-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                        <?php bloginfo('name'); ?>
-                    </a>
+              
             </div>
-
+            <div class="navigation">
                 <?php
                     wp_nav_menu( array(
                         'menu'              => 'Main Menu',

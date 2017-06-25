@@ -18,6 +18,15 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+//remove navigation on frontpage.php
+add_action('get_header', 'child_remove_genesis_do_nav');
+function child_remove_genesis_do_nav() {
+if (is_front_page()) {
+remove_action('genesis_before_header', 'genesis_do_nav');
+}
+}
+
+
 //Register Sidebars/Widget-Areas
 if ( function_exists('register_sidebar') )
 register_sidebar();
@@ -45,7 +54,7 @@ $the_query = new WP_Query( $args );
 
 if ( $the_query->have_posts() ) {
 
-$string .= '<div class="jumbotron">';
+$string .= '<div class="frontpage">';
   while ( $the_query->have_posts() ) {
     $the_query->the_post();
     $string .= '<a href="'. get_the_permalink() .'">'. get_the_post_thumbnail() .'</a>';
@@ -63,6 +72,7 @@ return $string;
 
 add_shortcode('wpb-random-posts','wpb_rand_posts');
 add_filter('widget_text', 'do_shortcode'); 
+
 
 
 /*
@@ -123,15 +133,17 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 
 
 
-  /**
-   * Custom Post Types
-   */
-  require get_template_directory() . '/inc/post-types/CPT.php';
+/**
+* Custom Post Types
+*/
+require get_template_directory() . '/inc/post-types/CPT.php';
 
-  //Portfolio Custom Post Type
-  require get_template_directory() . '/inc/post-types/register-portfolio.php';
+//Portfolio Custom Post Type
+require get_template_directory() . '/inc/post-types/register-portfolio.php';
 
-  // Theme options functions
-  require_once( get_template_directory() . '/inc/bswp-options.php' );
+// Theme options functions
+require_once( get_template_directory() . '/inc/bswp-options.php' );
+
+
 
 ?>

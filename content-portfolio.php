@@ -4,6 +4,8 @@
  */
 ?>
 
+<div class="col-md-6 col-md-offset-3">
+
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <div class="entry-content">
@@ -55,3 +57,5 @@
   </div><!-- .entry-footer -->
 
 </article><!-- #post-## -->
+
+</div>

@@ -15,6 +15,9 @@ get_header(); ?>
 
   <div class="row">
 
+  <div class="col-md-9 col-md-offset-3">
+
+
 
     <div id="primary" class="col-lg-12 col-md-12">
       <main id="main" class="site-main" role="main">
@@ -34,6 +37,8 @@ get_header(); ?>
 
       </main>  <!-- #main -->
    </div> <!-- #primary -->
+  </div>
+
   </div>
 
 
