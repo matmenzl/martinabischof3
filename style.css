@@ -538,6 +538,15 @@ div.frontpage img {
   height:50px;
 }
 
+/*style frontbrand*/ 
+.frontbrand {
+  top: 0.5em;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 
 /* start css styles for displaying the navigation on the left side
