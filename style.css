@@ -96,6 +96,10 @@ a .btn .btn-lg .btn-info .button-front {
   background-color:transparent;
 }
 
+.navbar-default .navbar-collapse {
+  background-color:white;
+}
+
 button.navbar-toggle, button.navbar-default, button.navbar-toggle:hover, button.navbar-toggle:focus, button.navbar-toggle:active {
   border:none;
   background-color:transparent;
