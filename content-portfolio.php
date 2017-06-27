@@ -21,7 +21,7 @@
       <div class="col-md-12 col-lg-12">
       <?php the_title( '<h2 class="entry-title"><span>', '</span></h2>' ); ?>
       </div>
-      <div class="col-md-6 col-lg-6">
+      <div class="col-md-12 col-lg-12">
         <?php if ( has_post_thumbnail() ) : ?>
         <?php the_post_thumbnail(); ?>
 
@@ -34,7 +34,7 @@
 
       </div>
  
-      <div class="col-md-6 col-lg-6">
+      <div class="col-md-12 col-lg-12">
         <?php the_content(); ?>
       </div>
       

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div class="col-md-6 col-md-offset-3">
+
 
 <div class="row">
 
@@ -35,7 +35,7 @@ get_header(); ?>
 
 	</div> 
 
-	</div>
+
 
 
 <?php get_footer(); ?>

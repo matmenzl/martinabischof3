@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: Nunito, Futura, Arial, Verdana;
+  font-family: Merriweather;
 /*  background: white url('#') repeat 0 0;
   margin:15px 0 0 0;*/
   font-size:32px;
@@ -92,7 +92,6 @@ a .btn .btn-lg .btn-info .button-front {
 
 .navbar-default {
   border-color:transparent;
-  /*background-color:rgba(255,255,255, 0.8);*/    /* 70% opaque red */
   background-color:transparent;
 }
 
@@ -141,12 +140,12 @@ a.navmenu-brand {
 }
 
 h1, h2 {
-  font-family: Nunito, Futura, Arial, Verdana;
+  font-family: Merriweather;
   font-weight: heavy;
 }
 
 caption, h3 {
-  font-family: Nunito, Futura, Arial, Verdana;
+  font-family: Merriweather;
   font-weight: heavy;
   color:black;
 }
@@ -174,7 +173,7 @@ header h2{
 }
 
 nav ul {
-  font-family: Nunito, Futura, Arial, Verdana;
+  font-family: Merriweather;
   font-weight:100;
   margin: 0;
   padding: 0;
@@ -190,12 +189,12 @@ nav ul {
   margin: 15px 0 0 0;
 }
 
-.navmenu-default, .navbar-default .navbar-offcanvas {
+/*.navmenu-default, .navbar-default .navbar-offcanvas {
   background-color:transparent;
   border:none;
   color:black;
   padding:35px 0 0 15px;
-}
+}*/
 
 
 /*Navigation */
@@ -394,7 +393,7 @@ element:hover,element:active {
 
 #filters button {
   color: #666;
-  font-family: Nunito, Futura, Arial, Verdana;
+  font-family: Merriweather;
   background-color:transparent;
   font-size:20px;
   border:none;
@@ -525,8 +524,12 @@ div.frontpage img {
 }
 
 /*hide nav on front-page.php*/
-.page-id-2 header, footer{
+.page-id-2 header, .page-id-2 footer, .page-id-2 #myNavmenu{
   display: none;
+}
+
+.page-id-2 {
+  padding-left:0;
 }
 
 /*button refresh positioning*/
@@ -601,7 +604,15 @@ div.frontpage img {
 /* end css styles for displaying the navigation on the left side
 */
 
+.offcanvas {
+    display: inline;
+}
 
+@media (min-width: 768px) {
+  body {
+    padding-left: 300px;
+  }
+}
 
 
 /* #Tablet (Portrait) */
@@ -613,6 +624,9 @@ div.frontpage img {
 /*  .row {
     margin-left: 120px;
   }*/
+  nav#mynavmenu.offcanvas.offcanvas.offcanvas {
+      display: inline;
+  }
 
 
 }
@@ -628,6 +642,10 @@ div.frontpage img {
   a.navbar-brand {
     font-size:24px;
   }
+  nav#mynavmenu.offcanvas.offcanvas {
+      display: inline;
+  }
+
 
 }
 
@@ -638,6 +656,9 @@ div.frontpage img {
   
   .row {
     margin: 0 auto;
+  }
+  nav#mynavmenu.offcanvas {
+      display: inherit;
   }
 
   

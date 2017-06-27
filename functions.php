@@ -18,15 +18,6 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
-//remove navigation on frontpage.php
-add_action('get_header', 'child_remove_genesis_do_nav');
-function child_remove_genesis_do_nav() {
-if (is_front_page()) {
-remove_action('genesis_before_header', 'genesis_do_nav');
-}
-}
-
-
 //Register Sidebars/Widget-Areas
 if ( function_exists('register_sidebar') )
 register_sidebar();
@@ -91,8 +82,9 @@ function remove_admin_login_header() {
 
 
 function martinabischof_theme_styles() {
-  wp_enqueue_style( 'animate_css', get_template_directory_uri() . '/css/animate.css' );
   wp_enqueue_style( 'jasny-bootstrap', get_template_directory_uri() . '/css/jasny-bootstrap.css' );
+  wp_enqueue_style( 'animate_css', get_template_directory_uri() . '/css/animate.css' );
+
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'hamburgers_css', get_template_directory_uri() . '/css/hamburgers.css' );
 }
@@ -106,8 +98,9 @@ function enqueue_our_required_stylesheets(){
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 function martinabischof_theme_js() {
-  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', false );
   wp_enqueue_script('jasny-bootstrap', get_template_directory_uri() . '/js/jasny-bootstrap.js', array('jquery'), '', false );
+  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', false );
+
   wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', false );
   wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', false );
   wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlqSsyuD-_Ou4UqJtLLVZQ10IGvytab8&sensor=false');
@@ -127,6 +120,7 @@ function martinabischof_theme_js() {
 function wpb_add_google_fonts() {
 
 wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"', false ); 
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet"', false ); 
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
