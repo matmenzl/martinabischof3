@@ -17,12 +17,16 @@
 
     <header>
 
-    <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="slide">
+    <div class="navbar navbar-default navbar-fixed-top" style="text-align:center;">
+     <a class="hidden-md hidden-lg" href="<?php echo home_url(); ?>">
+        <?php bloginfo('name'); ?>
+    </a>
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+
 
     </div>
 
