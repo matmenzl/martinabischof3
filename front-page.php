@@ -16,7 +16,14 @@
 
       <?php endif; ?>
       <div class="frontbrand">Martina Bischof</div>
-      <button class="refresh" style="background-color:transparent;border:none;"><a href="" onclick="dummy(0);return false;" ><span class="glyphicon glyphicon-chevron-right chevronicon" aria-hidden="true"></span></a></button>
+
+
+      <button class="reloadbutton navigationnext" onclick="location.reload();"></button>
+      <button class="reloadbutton navigationprevious " onclick="location.reload();"></button>
+      <div class="reloadiconright animated bounce"><i class="fa fa-chevron-right" aria-hidden="true"></i></div> 
+      <div class="reloadiconleft animated bounce"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+      </div>
+
 
 
 </div>

@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Portfolio
+ *
+ */
+
+get_header(); ?>
 
 
   <div class="row">

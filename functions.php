@@ -2,6 +2,8 @@
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+
 
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
@@ -89,6 +91,7 @@ function martinabischof_theme_styles() {
   wp_enqueue_style( 'hamburgers_css', get_template_directory_uri() . '/css/hamburgers.css' );
 }
 
+
 add_action( 'wp_enqueue_scripts', 'martinabischof_theme_styles' );
 
 //enqueues our external font awesome stylesheet
@@ -101,15 +104,13 @@ function martinabischof_theme_js() {
   wp_enqueue_script('jasny-bootstrap', get_template_directory_uri() . '/js/jasny-bootstrap.js', array('jquery'), '', false );
   wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', false );
 
-  wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', false );
-  wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', false );
-  wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlqSsyuD-_Ou4UqJtLLVZQ10IGvytab8&sensor=false');
-
-  wp_enqueue_script('front', get_template_directory_uri() . '/js/front.js', array('jquery'), '', false );
+  // wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', false );
+  // wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', false );
+  // wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAlqSsyuD-_Ou4UqJtLLVZQ10IGvytab8&sensor=false');
   wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'), '3.0.1', false );
-  wp_enqueue_script( 'cellsbyrows-js', get_template_directory_uri() . '/js/cellsbyrows.js', array(''), '', false );
+  // wp_enqueue_script( 'cellsbyrows-js', get_template_directory_uri() . '/js/cellsbyrows.js', array(''), '', false );
   wp_enqueue_script( 'images-loaded-js', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array('jquery'), '4.1.1', false );
-  wp_enqueue_script( 'hambugrgers-js', get_template_directory_uri() . '/js/hamburgers.js', array(''), '', false );
+  // wp_enqueue_script( 'hambugrgers-js', get_template_directory_uri() . '/js/hamburgers.js', array(''), '', false );
 
    
 
@@ -130,6 +131,13 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
 /**
 * Custom Post Types
 */
+
+//tgm plugin activation script
+require( get_template_directory() . '/inc/plugin-activation.php' );
+
+//meta-boxes
+require( get_template_directory() . '/inc/meta-box.php' );
+
 require get_template_directory() . '/inc/post-types/CPT.php';
 
 //Portfolio Custom Post Type
@@ -137,6 +145,10 @@ require get_template_directory() . '/inc/post-types/register-portfolio.php';
 
 // Theme options functions
 require_once( get_template_directory() . '/inc/bswp-options.php' );
+
+// Redux Theme Options
+require_once( get_template_directory() . '/inc/theme-options.php' );
+
 
 
 

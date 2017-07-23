@@ -189,12 +189,16 @@ nav ul {
   margin: 15px 0 0 0;
 }
 
-/*.navmenu-default, .navbar-default .navbar-offcanvas {
+ul.navmenu-default {
   background-color:transparent;
   border:none;
   color:black;
-  padding:35px 0 0 15px;
-}*/
+}
+
+nav#myNavmenu {
+  background-color:white;
+  border:none;
+}
 
 
 /*Navigation */
@@ -391,6 +395,16 @@ element:hover,element:active {
 
 
 
+
+.carousel-inner {
+  max-height:80%;
+}
+
+.carousel-indicators {
+  bottom:40px;
+}
+
+
 #filters button {
   color: #666;
   font-family: Merriweather;
@@ -436,6 +450,7 @@ div#portfolio-items {
   font-size:20px;
   color:grey;
   float:left;
+  width:100%;
 }
 
 .portfolio-navigation li {
@@ -509,9 +524,9 @@ div.frontpage-item:hover, div.portfolio-item:hover {
   height:100%;
 }
 
-img:hover, img:active {
-  -webkit-filter: opacity(.2);
-  filter: opacity(.2);
+.portfolio-item img:hover, .portfolio-item img:active {
+  -webkit-filter: opacity(.1);
+  filter: opacity(.1);
 }
 
 /*make frontpage-image responsive
@@ -554,6 +569,64 @@ div.frontpage img {
   text-align: center;
 }
 
+
+
+/*frontpage styles*/
+.reloadiconright {
+  background-color: transparent;
+  border: none;
+  color: white;
+  right: 5px;
+  position: fixed;
+  bottom: 50%;
+}
+
+.reloadiconleft {
+  background-color: transparent;
+  border: none;
+  color: white;
+  left: 5px;
+  position: fixed;
+  bottom: 50%;
+}
+
+.reloadiconright, .reloadiconleft {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -ms-animation-delay: 10s;
+}
+
+.navigationnext {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:0;
+  height: 100%;
+  width: 25%;
+  z-index: 20;
+  background-color: transparent;
+  border: none;
+  cursor: url(http://www.authentisch.agency/images/next-80.png), auto;
+}
+
+.navigationprevious {
+  display: block;
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  left:0;
+  height: 100%;
+  width: 25%;
+  z-index: 20;
+  background-color: transparent;
+  border: none;
+  cursor: url(http://www.authentisch.agency/images/prev-80.png), auto;
+}
+
+button:focus {
+  outline: none;
+}
 
 
 /* start css styles for displaying the navigation on the left side
@@ -611,6 +684,44 @@ div.frontpage img {
 @media (min-width: 768px) {
   body {
     padding-left: 300px;
+  }
+
+  /*slideshow*/
+
+  a.carousel-control.right {
+    display: block;
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 350px;
+    width: 50%;
+    z-index: 20;
+    background-color: transparent;
+    border: none;
+    cursor: url(img/next-80.png), auto;
+    background-image:none;
+  }
+
+  a.carousel-control.left {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left:0;
+    height: 350px;
+    width: 50%;
+    z-index: 20;
+    background-color: transparent;
+    border: none;
+    cursor: url(img/prev-80.png), auto;
+    background-image:none;
+
+  }
+
+  .glyphicon.glyphicon-chevron-left {
+    display:none;
+  }
+  .glyphicon.glyphicon-chevron-right {
+    display:none;
   }
 }
 

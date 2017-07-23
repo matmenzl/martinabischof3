@@ -7,7 +7,7 @@ $portfolio = new CPT(array(
     'slug' => 'portfolio'
 ),
 	array(
-    'supports' => array('title', 'editor', 'thumbnail', 'comments'),
+    'supports' => array('title', 'editor', 'thumbnail', 'comments', 'attachements',),
     'menu_icon' => 'dashicons-portfolio'
 ));
  
